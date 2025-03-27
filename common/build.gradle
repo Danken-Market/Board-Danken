@@ -1,0 +1,16 @@
+dependencies {
+    // 다른 모듈에 대한 의존성 설정
+
+    // API 모듈 특정 의존성
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-validation'
+}
+
+// API 모듈이 실행 가능한 JAR를 생성하도록 설정
+bootJar {
+    enabled = false
+}
+
+jar {
+    enabled = true
+}
