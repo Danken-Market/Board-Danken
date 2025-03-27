@@ -1,15 +1,3 @@
-dependencies {
-    // common 모듈에 필요한 의존성
-    implementation 'org.apache.commons:commons-lang3'
-    implementation 'com.fasterxml.jackson.core:jackson-databind'
-    implementation 'org.springframework.boot:spring-boot-starter-validation'
-}
-
-// common 모듈은 라이브러리이므로 실행 가능한 JAR를 생성하지 않음
-bootJar {
-    enabled = false
-}
-
-jar {
-    enabled = true
-}
+*.java text eol=lf
+*.gradle text eol=lf
+*.md text eol=lf
