@@ -24,8 +24,14 @@ subprojects {
         }
     }
 
+    // common을 제외한 모든 서브프로젝트에 common 의존성 추가
+    if (project.name != 'common') {
+        dependencies {
+            implementation project(':common')
+        }
+    }
+
     dependencies {
-        implementation project(':common')
         implementation 'org.springframework.boot:spring-boot-starter'
         testImplementation 'org.springframework.boot:spring-boot-starter-test'
         testRuntimeOnly 'org.junit.platform:junit-platform-launcher'

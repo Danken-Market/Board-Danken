@@ -1,3 +1,7 @@
+plugins {
+    id 'java-library'  // 라이브러리 모듈임을 명시
+}
+
 dependencies {
     // 다른 모듈에 대한 의존성 설정
 

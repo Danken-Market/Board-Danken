@@ -1,4 +1,6 @@
 rootProject.name = 'Board'
 
 include 'common'
+include 'api'
+include 'admin'
 
